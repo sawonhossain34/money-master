@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/e079e59345.js" crossorigin="anonymous"></script>
+    <!-- daisyUI link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <!-- tailwindcss link -->
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <section><h1 class="text-4xl font-bold text-center p-5 text-teal-400"><span>Money Master</span> <i class="fa-solid fa-sack-dollar text-amber-300	"></i></h1>
+        </section>
+    </header>
+    <main>
+        <section class="text-center ">
+            <div class="flex flex-row gap-4 ">
+                <div class="w-[65%]  ">
+                    <img src="images/dollar.png" alt="dollar">
+                </div>
+            <div class="w-[30%]  bg-slate-100">
+                <h2 class="text-2xl font-semibold m-2">Income</h2>
+                <p class="display: inline  m-4">income:</p>
+                <input id="total-income" type="text" placeholder="Income" class="bg-slate-200 input input-bordered input-sm w-[50%] max-w-xs my-4" />
+
+
+                <h2 class="text-2xl font-semibold m-2">Expenses</h2>
+
+                <p class="display: inline  m-4">Food:</p>
+                <input id="food-field"type="text" placeholder="Food Ammount" class="bg-slate-200 input input-bordered input-sm w-[50%] max-w-xs my-4" />
+ <br>
+
+                <p class="display: inline  m-4">Rent:</p>
+                <input id="rent-field" type="text" placeholder="Rent Ammount" class="bg-slate-200 input input-bordered input-sm w-[50%] max-w-xs my-4" /><br>
+
+
+                <p class="display: inline  m-3">Clothes:</p>
+                <input id="clothes-field" type="text" placeholder="Clothes Ammount" class=" bg-slate-200 input input-bordered input-sm w-[50%] max-w-xs my-4" /><br>
+
+                <button id="btn-calculate" class=" bg-teal-400 py-1 px-8 rounded text-white mb-2	">Calculate</button>
+                <h2 class="text-2xl font-semibold m-4">Total Expenses: <span id="total-expenses">00</span></h2>
+                <h2 class="text-2xl font-semibold m-4">Balance: <span id="have-balance">00</span></h2>
+
+                <p class="display: inline  m-4">Save:
+                <input id="percent-input" type="text" placeholder="" class="border bg-slate-200 px-4 w-[20%]	  display-inline" />   %</p>
+                <button id="btn-save" class=" bg-teal-400 py-1 px-8 rounded text-white	">Save</button>
+
+                <h2 class="text-2xl font-semibold m-4">saving Ammount: <span id="saving-ammount" >00</span> </h2>
+                <h2 class="text-2xl font-semibold m-4">Remaining Balance:<span id="remaining-balance"> 00</span></h2>
+
+
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/money.js"></script>
+</body>
+</html>
